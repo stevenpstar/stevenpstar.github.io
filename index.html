@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+            <nav class="nav-bar-top">
+                <div class="nav-left-half">
+                    <div class="nav-left-name">
+                        <h1 id="name">Steven Star /</h1>
+                    </div>
+                    <div class="nav-left-title">
+                        <span id="title">Development Portfolio</span>
+                    </div>
+                    
+                    
+                </div>
+                <div class="nav-right-half">
+                    <ul id="nav-buttons">
+                        <li class="nav-button" id="work-button">Work</li>
+                        <li class="nav-button" id="about-button">About</li>
+                        <li class="nav-button" id="contact-button">Contact</li>
+                    </ul>
+                </div>
+                
+            </nav>
+            <wrapper id="work" class="content-wrap">
+                <div class="arrow" id="arrow-left" onclick="previousProject()">
+                    <div class="arrow-image-wrapper">
+                        <img class="project-arrow" src="Resources/arrowleft.svg" alt="Previous Project">
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content-wrapper content-start-animation" id="content">
+                        <div class="content-preview">
+                            <img id="preview_image" src="">
+                            <video class="prev_hidden" id="preview_video" src="" controls></video>
+                            <div class="content-circle-wrapper">
+                            <div class="content-preview-circle content-preview-circle-selected" id="circle_1" onclick="selectImage('1')"></div>
+                            <div class="content-preview-circle" id="circle_2" onclick="selectImage('2')"></div>
+                            <div class="content-preview-circle" id="circle_3" onclick="selectImage('3')"></div>
+                            </div>
+                        </div>
+                        <div class="content-information">
+                            <div class="information-spacer"></div>
+                            <div class="information-side-links"></div>
+                            <div class="content-information-space">
+                                <div class="content-information-left">
+                                    <h2 id="project_title">Sheet/</h2>
+                                </div>
+                                <div class="content-information-right">
+                                    <p id="project_description">Sheet/ is a browser-based music notation app built with HTML5
+                                        Canvas and Javascript featuring notation editing and basic playback. Sheet/ works on both desktop and mobile/touch devices and is
+                                        compatible with Chrome and Firefox.
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="content-links-wrapper">
+                        
+                        <div class="content-links"></div>
+                    </div>
+                        
+                </div>
+                <div class="arrow" id="arrow-right" onclick="nextProject()">
+                    <div class="arrow-image-wrapper">
+                        <img class="project-arrow" src="Resources/arrowright.svg" alt="Next Project">
+                    </div>
+                </div>
+            </wrapper>
+
+            <wrapper id="aboutme" class="about">
+                <div class="picture-side">
+                    <div class="about-side-wrapper">
+                        <div class="words">
+                        <img src="./Resources/me.png" id="picture_of_me"><br>
+                        <span class="small-text">Hi! It's Me!</span>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="information-side">
+                        <div class="about-side-wrapper">
+                            <div class="words">
+                                    <h3>About Me</h3>
+                                    <p>My name is Steven Star, I'm from Melbourne Australia. I am passionate about Web Development, Game Development and Music. I try to merge my passions whenever possible. I have a Bachelors Degree in Music Performance (contemporary guitar) from The University of Melbourne,
+                                         where I also took some classes in programming, Algorithms and Object Orientated Programming.</p>
+                                    <h4>Skills</h4>
+                                    <ul class="skill-list">
+                                        <li>HTML5</li>
+                                        <li>CSS</li>
+                                        <li>Javascript/ES6</li>
+                                        <li>Node</li>
+                                        <li>Canvas</li>
+                                        <li>Socket.io</li>
+                                        <li>Java</li>
+                                    </ul>
+                            </div>
+                            </div>
+                </div>
+            </wrapper>
+
+            <script src="script.js"></script>
+    </body>
+
+</html>
